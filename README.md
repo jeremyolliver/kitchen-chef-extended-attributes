@@ -39,7 +39,7 @@ Use the provisioner `chef_extended_attributes` in your .kitchen.yml and ensure `
             sudo:
               users: ['vagrant']
 
-    # Suites will have node data loaded from nodes_path (dna/<NAME>.json)
+    # Suites will have node data loaded from nodes_path (nodes/<SUITENAME>.json)
     suites:
       - name: app
         run_list:
