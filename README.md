@@ -1,5 +1,7 @@
 # kitchen-chef-extended-attributes
 
+[![Code Climate](https://codeclimate.com/github/jeremyolliver/kitchen-chef-extended-attributes/badges/gpa.svg)](https://codeclimate.com/github/jeremyolliver/kitchen-chef-extended-attributes)
+
 ## Use Case
 
 If you use chef-solo for your main workflow, then you will have dna.json files defining the attributes and run_list etc for each of your roles. This test-kitchen extension allows you to use test-kitchen as your main entry point for a chef repo level test-kitchen setup - loading the pre-existing dna.json for your nodes so that your .kitchen.yml doesn't drift from the actual setup. Additionally adding extra run list items or attributes within the .kitchen.yml file will override the json file for example adding test handler cookbooks or vagrant user sudo permissions.
