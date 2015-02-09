@@ -2,6 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/jeremyolliver/kitchen-chef-extended-attributes.svg?style=shield)](https://circleci.com/gh/jeremyolliver/kitchen-chef-extended-attributes)
 [![Code Climate](https://codeclimate.com/github/jeremyolliver/kitchen-chef-extended-attributes/badges/gpa.svg)](https://codeclimate.com/github/jeremyolliver/kitchen-chef-extended-attributes)
+[![Gem Version](https://badge.fury.io/rb/kitchen-chef-extended-attributes.svg)](http://badge.fury.io/rb/kitchen-chef-extended-attributes)
 
 ## Use Case
 
