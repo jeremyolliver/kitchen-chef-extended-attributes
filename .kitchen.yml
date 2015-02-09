@@ -1,0 +1,18 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_extended_attributes
+  nodes_path: 'test/nodes'
+  cookbooks_path: 'test/cookbooks'
+
+platforms:
+  - name: ubuntu-14.04
+    run_list:
+        - 'recipe[apt]'
+
+suites:
+  - name: default
+    attributes:
+      valuefromkitchen: true

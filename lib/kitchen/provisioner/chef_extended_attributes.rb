@@ -32,6 +32,7 @@ module Kitchen
 
         custom_json = JSON.parse(File.read(source_file))
         merged_json = custom_json.merge(config[:attributes])
+        merged_json['run_list'] ||= []
         merged_json['run_list'] += (config[:run_list] || [])
 
         File.open(destination_file, "wb") do |file|

@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
                      chef_extended_attributes to use pre-existing dna.json files, and
                      optionally, to merge those with attributes in .kitchen.yml}
 
-  s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.md", "CHANGELOG.md"]
+  s.require_paths = ['lib']
+  s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 

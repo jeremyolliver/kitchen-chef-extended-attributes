@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rake'
-gem 'cane'
+gemspec
 
-gemfile
+group :development do
+  # gem 'rake'
+  gem 'cane'
+  gem 'test-kitchen'
+  gem 'kitchen-docker'
+  gem 'berkshelf'
+end
