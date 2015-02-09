@@ -4,7 +4,11 @@ machine:
   services:
     - docker
 
+dependencies:
+  cache_directories:
+    - '~/.berkshelf'
+
 test:
   override:
     - bundle exec cane .
-    - bundle exec kitchen converge default-ubuntu-1404
+    - bundle exec kitchen converge all
