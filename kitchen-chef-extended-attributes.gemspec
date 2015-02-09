@@ -12,11 +12,12 @@ Gem::Specification.new do |s|
 
   s.require_paths = ['lib']
   s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "README.md", "CHANGELOG.md"]
-  s.test_files = Dir["spec/**/*"]
+  s.test_files = Dir["test/**/*"]
   s.license = "MIT"
 
-  s.add_runtime_dependency "test-kitchen"
-  # s.add_development_dependency "rake", ">= 10.0.0"
-  # s.add_development_dependency "minitest"
-  # s.add_development_dependency "simplecov"
+  s.add_runtime_dependency 'test-kitchen'
+
+  s.add_development_dependency 'kitchen-docker'
+  s.add_development_dependency 'berkshelf'
+  s.add_development_dependency 'cane'
 end

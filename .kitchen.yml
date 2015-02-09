@@ -10,9 +10,23 @@ provisioner:
 platforms:
   - name: ubuntu-14.04
     run_list:
-        - 'recipe[apt]'
+      - 'recipe[apt]'
 
 suites:
   - name: default
+    run_list:
+      - 'recipe[extended_attributes_test::default]'
     attributes:
       valuefromkitchen: true
+  - name: kitchenmerged
+    run_list:
+      - 'recipe[extended_attributes_test::kitchenmerged]'
+    attributes:
+      valuefromdna: 'overridden'
+  - name: kitchenoverride
+    provisioner:
+      merge_attributes: false
+    run_list:
+      - 'recipe[extended_attributes_test::kitchenoverride]'
+    attributes:
+      valuefromkitchen: 'shouldnevershowup'

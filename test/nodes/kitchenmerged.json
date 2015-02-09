@@ -1,0 +1,6 @@
+{
+  "valuefromdna": "default",
+  "run_list": [
+    "recipe[git]"
+  ]
+}
