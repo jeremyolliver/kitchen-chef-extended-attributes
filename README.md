@@ -1,5 +1,6 @@
 # kitchen-chef-extended-attributes
 
+[![Circle CI](https://circleci.com/gh/jeremyolliver/kitchen-chef-extended-attributes.svg?style=shield)](https://circleci.com/gh/jeremyolliver/kitchen-chef-extended-attributes)
 [![Code Climate](https://codeclimate.com/github/jeremyolliver/kitchen-chef-extended-attributes/badges/gpa.svg)](https://codeclimate.com/github/jeremyolliver/kitchen-chef-extended-attributes)
 
 ## Use Case
