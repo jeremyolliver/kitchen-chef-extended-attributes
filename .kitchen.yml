@@ -24,7 +24,8 @@ suites:
   - name: kitchenoverride
     provisioner:
       merge_attributes: false
-    run_list:
-      - 'recipe[extended_attributes_test::kitchenoverride]'
     attributes:
       valuefromkitchen: 'shouldnevershowup'
+  - name: clearingattributes
+    run_list:
+      - 'recipe[extended_attributes_test::clearingattributes]'

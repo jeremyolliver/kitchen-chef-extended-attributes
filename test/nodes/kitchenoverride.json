@@ -1,3 +1,6 @@
 {
-  "valuefromdna": "default"
+  "valuefromdna": "default",
+  "run_list": [
+    "recipe[extended_attributes_test::kitchenoverride]"
+  ]
 }
