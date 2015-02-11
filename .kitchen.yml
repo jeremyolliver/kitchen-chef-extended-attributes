@@ -29,3 +29,6 @@ suites:
   - name: clearingattributes
     run_list:
       - 'recipe[extended_attributes_test::clearingattributes]'
+    attributes:
+      service:
+        license_key: null

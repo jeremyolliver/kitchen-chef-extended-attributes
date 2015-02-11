@@ -4,6 +4,7 @@ describe_recipe 'extended_attributes_test::kitchenmerged' do
   it 'should give higher precendence to attributes in kitchen.yml' do
     merged_json_data = JSON.parse(File.read('/tmp/kitchen/dna.json'))
     merged_json_data['valuefromdna'].must_equal 'overridden'
+    merged_json_data.keys.sort.must_equal ['run_list', 'valuefromdna']
   end
 
   it 'should include run_list items from dna JSON file' do
