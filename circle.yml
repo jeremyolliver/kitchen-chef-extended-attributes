@@ -4,10 +4,6 @@ machine:
   services:
     - docker
 
-dependencies:
-  cache_directories:
-    - '~/.berkshelf'
-
 test:
   override:
     - bundle exec cane .
