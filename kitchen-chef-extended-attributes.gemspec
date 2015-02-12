@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "kitchen-chef-extended-attributes"
-  s.version     = '0.1.0'
+  s.version     = '0.2.0'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jeremy Olliver"]
   s.email       = ["jeremy.olliver@gmail.com"]
