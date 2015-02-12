@@ -31,7 +31,8 @@ module Kitchen
         info("merging #{instance.suite.name}.json and kitchen attributes")
 
         custom_json = JSON.parse(File.read(source_file))
-        merged_json = custom_json.merge(config[:attributes])
+        kitchen_attrs = Kitchen::Util.stringified_hash(config[:attributes])
+        merged_json = custom_json.merge(kitchen_attrs)
         merged_json['run_list'] ||= []
         merged_json['run_list'] += (config[:run_list] || [])
 
